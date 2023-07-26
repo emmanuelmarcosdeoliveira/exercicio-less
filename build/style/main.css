@@ -59,7 +59,7 @@ header .container {
   background-color: #4cd137;
 }
 body {
-  background-color: #f5f6fa;
+  background-color: #f7f7f7;
   font-family: "Nunito", sans-serif;
 }
 .container {
@@ -68,22 +68,22 @@ body {
   margin: 0 auto;
 }
 @media (min-width:768px) and (max-width:1023px) {
-  .container {
+  .container .container {
     max-width: 80%;
   }
-  .products {
+  .container .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media (max-width: 767px) {
-  .container {
+  .container .container {
     max-width: 80%;
   }
-  .products {
+  .container .products {
     display: block;
   }
-  .product-item {
+  .container .product-item {
     margin-bottom: 32px;
   }
 }
