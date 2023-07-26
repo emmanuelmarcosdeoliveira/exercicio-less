@@ -1,5 +1,39 @@
-@import "variaveis.less";
+@import "reset.less";
+@import "mapas.less";
+@import "header.less";
+@import "product.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width:768px) and (max-width:1023px)";
 
 body {
-  background-color: @corDeFudo;
+  background-color: #colors[cordebackground];
+  font-family: "Nunito", sans-serif;
 }
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media @breakpointTablet {
+    .container {
+      max-width: 80%;
+    }
+    .products {
+      grid-template-columns: repeat(2, 48.5%);
+      column-gap: 3%;
+    }
+  }
+
+  @media @breakpointMobile {
+    .container {
+      max-width: 80%;
+    }
+    .products {
+      display: block;
+    }
+    .product-item {
+      margin-bottom: 32px;
+    }
+  }
