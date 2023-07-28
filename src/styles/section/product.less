@@ -1,4 +1,6 @@
-@import "mapas.less";
+@import "../utility/mapas.less";
+@import "../utility/mixim.less";
+@import "../utility/reset.less";
 
 .products {
   margin-top: 40px;
@@ -13,14 +15,7 @@
   border-radius: 16px;
 }
 .product-button {
-  display: block;
-  background-color: #colors[cordobotao];
-  color: #fff;
-  text-align: center;
-  padding: 8px 0;
-  border-radius: 8px;
-  margin-top: 8px;
-  text-decoration: none;
+ .botao(); 
   &:hover {
     background-color: #colors[cordobotaohover];
   }

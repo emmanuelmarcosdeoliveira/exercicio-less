@@ -1,7 +1,7 @@
-@import "reset.less";
-@import "mapas.less";
-@import "header.less";
-@import "product.less";
+@import "./utility/mapas.less";
+@import "./utility/reset.less";
+@import "./section/header.less";
+@import "./section/product.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width:768px) and (max-width:1023px)";
@@ -14,7 +14,7 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-
+}
   @media @breakpointTablet {
     .container {
       max-width: 80%;
@@ -36,4 +36,3 @@ body {
       margin-bottom: 32px;
     }
   }
-}

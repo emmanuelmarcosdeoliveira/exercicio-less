@@ -33,6 +33,16 @@ header .container {
   color: #fff;
   text-decoration: none;
 }
+.botao {
+  display: block;
+  background-color: #44bd32;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
 .products {
   margin-top: 40px;
   display: grid;
@@ -68,22 +78,22 @@ body {
   margin: 0 auto;
 }
 @media (min-width:768px) and (max-width:1023px) {
-  .container .container {
+  .container {
     max-width: 80%;
   }
-  .container .products {
+  .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media (max-width: 767px) {
-  .container .container {
+  .container {
     max-width: 80%;
   }
-  .container .products {
+  .products {
     display: block;
   }
-  .container .product-item {
+  .product-item {
     margin-bottom: 32px;
   }
 }
